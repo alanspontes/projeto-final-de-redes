@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/alanspontes/projeto-final-de-redes#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gem": "^2.4.2",
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
   }
 }
