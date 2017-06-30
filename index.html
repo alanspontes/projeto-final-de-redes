@@ -11,53 +11,86 @@
 </head>
 <body>
 
-	<header>
-		<div class="container">
-			<div class="logo">
-			<a href="index.html">
-				<img src="images/logo-topo2.png" alt="Logo Topo ADK">
-			</a>
-			</div>	
-			<div class="links">	
-				<nav>
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="cadastro.html">Cadastro</a></li>
-						<li><a href="contato.html">Login</a></li>
-						<li><a href="contato.html">Contato</a></li>
-						
-					</ul>
-				</nav>
-				<ul class="social">
-					<li>
-						<a href="https://github.com/alanspontes/projeto-final-de-redes/tree/master" target="_blank"><i class="fa fa-github-alt" ></i></a>
-					</li>
-				</ul>
-			</div>
-			<h1><strong>INÍCIO</strong></h1>
-		</div>
-	</header>
+	<nav class="menu-responsivo">
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="cadastro.html">Cadastro</a></li>
+							<li><a href="#">Login</a></li>
+							<li><a href="contato.html">Contato</a></li>
+											
+						</ul>
+					</nav>
 
-	<main>
-		
+	<div class="layout">
+		<header>
 			<div class="container">
-				<div class="textos">
-					<ul class="social">
-						<br><p>Olá!<br> Seja bem vindo ao nosso site. Aqui disponibilizamos para você, de uma forma simples e prática, uma maneira de você, estudante de graduação, expressar sua opinião e avaliar professores universitários da graduação com base em sua própria experiência na disciplina. É muito importante que você seja imparcial e avalie sinceramente os aspectos que forem apresentados. Nosso objetivo é contribuir com a comunidade acadêmica compartilhando informações que são úteis ao longo de sua trajetória como universitário. Cadastre-se agora mesmo e participe desse ciclo.<br><br></p>
-					</ul>
+				<div class="logo">
+				<a href="index.html">
+					<img src="images/logo-topo2.png" alt="Logo Topo ADK">
+				</a>
+				</div>	
+				<div class="links">	
 					
-					<a href="#" class="botao medio">CADASTRE-SE</a>
+					<nav>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="cadastro.html">Cadastro</a></li>
+							<li><a href="#">Login</a></li>
+							<li><a href="contato.html">Contato</a></li>
+											
+						</ul>
+					</nav>
+	
+				<a class="toggle" href="javascript:;">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+
+
+					<ul class="social">
+						<li>
+							<a href="https://github.com/alanspontes/projeto-final-de-redes/tree/master" target="_blank"><i class="fa fa-github-alt" ></i></a>
+						</li>
+					</ul>
 				</div>
+				<h1><strong>INÍCIO</strong></h1>
 			</div>
-		
-	</main>
-	<footer>
-		<div align="center" class="logo-rodape">
-			<a href="index.html">
-				<img src="images/logo-rodape.png" alt="Logo Rodape">
-			</a>
-			<br><br><p>2017 <i class="fa fa-copyright"></i> Todos os Direitos Reservados</p>
-		</div>
-	</footer>
+		</header>
+
+		<main>
+			
+				<div class="container">
+					<div class="textos">
+						<ul class="social">
+							<br><p>Olá!<br> Seja bem vindo ao nosso site. Aqui disponibilizamos para você, de uma forma simples e prática, uma maneira de você, estudante de graduação, expressar sua opinião e avaliar professores universitários da graduação com base em sua própria experiência na disciplina. É muito importante que você seja imparcial e avalie sinceramente os aspectos que forem apresentados. Nosso objetivo é contribuir com a comunidade acadêmica compartilhando informações que são úteis ao longo de sua trajetória como universitário. Cadastre-se agora mesmo e participe desse ciclo.<br><br></p>
+						</ul>
+						
+						<a href="#" class="botao medio">CADASTRE-SE</a>
+					</div>
+				</div>
+			
+		</main>
+		<footer>
+			<div align="center" class="logo-rodape">
+				<a href="index.html">
+					<img src="images/logo-rodape.png" alt="Logo Rodape">
+				</a>
+				<br><br><p>2017 <i class="fa fa-copyright"></i> Todos os Direitos Reservados</p>
+			</div>
+
+		</footer>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){
+
+			$('.toggle').click(function(){
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+		});
+	</script>
 </body>
 </html>
