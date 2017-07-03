@@ -1,0 +1,27 @@
+</main>
+		<footer>
+			<div align="center" class="logo-rodape logo wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
+				<a href="<?php echo BASE ?>home/">
+					<img src="<?php echo IMG; ?>/logo-rodape.png" alt="Logo Rodape">
+				</a>
+				<br><br><p><?php echo date("Y"); ?> <i class="fa fa-copyright"></i> Todos os Direitos Reservados.</p>
+			</div>
+
+		</footer>
+	</div>
+	<script src="<?php echo BOWER; ?>bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="<?php echo BOWER; ?>jquery/dist/jquery.min.js"></script>
+	<script src="<?php echo BOWER; ?>wow/dist/wow.min.js"></script>
+	<script>
+	    $(function(){
+	      
+	      $('.toggle').click(function(){
+	        $('.layout').toggleClass('ativo');
+	        $('.menu-responsivo').toggleClass('ativo');
+	        $(this).toggleClass('ativo');
+	      });
+	      new WOW().init();
+	    });
+  </script>
+</body>
+</html>

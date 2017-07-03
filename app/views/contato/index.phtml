@@ -1,0 +1,60 @@
+<section class="contato">
+			<div class="container">
+					<?php 
+
+					$value = [
+
+					];
+
+					Form::open('enviarcontact',$value, [
+					'action' => BASE . 'contato/enviar/',
+						'prevent' => [
+							'focus'
+						]
+					]);
+
+						Form::Textbox(
+							'Nome:',
+							'nome',
+							[
+								'required' => 1
+							]
+						);
+
+						Form::Email(
+							'E-mail:',
+							'email',
+							[
+								'required' => 1
+							]
+						);
+
+
+						Form::Phone(
+							'Telefone:',
+							'telefone',
+							[
+								'required' => 1
+							]
+						);
+
+
+						Form::Textbox(
+							'Assunto:',
+							'assunto',
+							[
+								'required' => 1
+							]
+						);
+
+						Form::Textarea(
+							"Mensagem:",
+							"comentario", 
+							[
+								'required' => 1
+							]
+						);						
+					Form::close(Form::$SUBMIT);
+					 ?>
+			</div>
+</section>

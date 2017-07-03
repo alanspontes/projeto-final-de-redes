@@ -1,0 +1,259 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-custom">
+        <?php
+              $coelho1 = $view_notas1["0"];
+              $coelho2 = $view_notas2["0"];
+              $coelho3 = $view_notas3["0"];
+        ?>
+        <?php
+
+              $qtd1 = $view_qtd1["0"];
+              $qtd2 = $view_qtd2["0"];
+              $qtd3 = $view_qtd3["0"];
+        ?>
+            <div align="center" class="panel-body">
+            <table class="table">
+            	<thead>
+                    <tr>
+                        <th>Professor</th>
+                        <th>Notas</th>
+                        <th>Avaliações</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <?php if($coelho1) :
+                    ?>
+                        <tr>
+                            <td>José Maria Monteiro</td>
+                            <td>
+                                <!-- <?php echo $coelho1->fb ?> -->
+                                <?php if ($coelho1->fb == '0'): ?>
+                                    <i></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '0' && $coelho1->fb <= '0.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '0.5' && $coelho1->fb <='1'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '1' && $coelho1->fb <= '1.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+                                
+                                <?php if ($coelho1->fb > '1.5' && $coelho1->fb <='2'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '2' && $coelho1->fb <= '2.5'): ?>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '2.5' && $coelho1->fb <='3'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '3' && $coelho1->fb <= '3.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '3.5' && $coelho1->fb <='4'): ?>
+                                   <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '4' && $coelho1->fb <= '4.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho1->fb > '4.5' && $coelho1->fb <='5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+                            </td>
+                            <td><?php echo $qtd1->qtd ?></td>
+                        </tr>
+
+                    <?php endif ;
+                    ?>
+
+                    <?php if($coelho2) :
+                    ?>
+                        <tr>
+                            <td>Emanuel Bezerra</td>
+                            <td>
+                            <!-- <?php echo $coelho2->fb ?> -->
+                                <?php if ($coelho2->fb == '0'): ?>
+                                    <i></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '0' && $coelho2->fb <= '0.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '0.5' && $coelho2->fb <='1'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '1' && $coelho2->fb <= '1.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+                                
+                                <?php if ($coelho2->fb > '1.5' && $coelho2->fb <='2'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '2' && $coelho2->fb <= '2.5'): ?>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '2.5' && $coelho2->fb <='3'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '3' && $coelho2->fb <= '3.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '3.5' && $coelho2->fb <='4'): ?>
+                                   <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '4' && $coelho2->fb <= '4.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho2->fb > '4.5' && $coelho2->fb <='5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+                            </td>
+                            <td><?php echo $qtd2->qtd ?></td>
+                        </tr>
+
+                    <?php endif ;
+                    ?>
+
+                     <?php if($coelho3) :
+                    ?>
+                        <tr>
+                            <td>Marcelino Pequeno</td>
+                            <td>
+                                <!-- <?php echo $coelho2->fb ?> -->
+                                <?php if ($coelho3->fb == '0'): ?>
+                                    <i></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '0' && $coelho3->fb <= '0.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '0.5' && $coelho3->fb <='1'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '1' && $coelho3->fb <= '1.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+                                
+                                <?php if ($coelho3->fb > '1.5' && $coelho3->fb <='2'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '2' && $coelho3->fb <= '2.5'): ?>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><font color="#daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '2.5' && $coelho3->fb <='3'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '3' && $coelho3->fb <= '3.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '3.5' && $coelho3->fb <='4'): ?>
+                                   <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '4' && $coelho3->fb <= '4.5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star-half-o"></i>
+                                <?php endif ?>
+
+                                <?php if ($coelho3->fb > '4.5' && $coelho3->fb <='5'): ?>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                    <font color="daca1d"><i class="fa fa-star"></i></font>
+                                <?php endif ?>
+                            </td>
+                            <td><?php echo $qtd3->qtd ?></td>
+                        </tr>
+
+                    <?php endif ;
+                    ?>
+                </tbody>
+            </table>
+            <a href="<?php echo BASE . 'home/'; ?>" class="btn btn-primary"><i class="fa fa-reply"></i> Voltar</a>
+            </div>
+        </div>
+    </div>
+</div>

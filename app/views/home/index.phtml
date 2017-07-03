@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-custom">
+            <div  class="panel-heading">
+            <br> <p class="bg-success"><i class="fa  fa-check"></i> Você foi autenticado com sucesso.</p>
+            </div>
+            <div class="panel-body">
+        		
+                <br><br>Bem-vindo (a), <?php echo $view_user->name; ?>. Este é o nosso sub-menu do usuário, aqui você pode:
+                  <div style="padding-left: 10px; padding-top: 5px; padding-bottom: 5px; padding-right: 10px; margin-left: 5px;" align="justify"><li>Avaliar professores clicando no botão <b>Votar</b>;</li><li>Editar seu perfil de usuário acessando o <b>Editar Perfil</b>;</li> <li>Visualizar a média das notas de cada professor em <b>Média das Notas</b>;</li> <li>E se desejar sair da sua conta, basta clicar em <b>Sair</b>.</li>
+                  </div><br>          	
+                <a href="<?php echo BASE . 'login/sair'; ?>" class="btn btn-danger"><i class="fa fa-sign-out"></i> Sair</a>
+                <a href="<?php echo BASE . 'voto/'; ?>" class="btn btn-primary"><i class="fa fa-legal"></i> Votar</a>
+                <a href="<?php echo BASE . 'perfil/editar'; ?>" class="btn btn-primary"><i class="fa fa-gear"></i> Editar Perfil</a>
+                <a href="<?php echo BASE . 'media/'; ?>" class="btn btn-primary"><i class="fa fa-book"></i> Media das Notas</a>
+            </div>
+        </div>
+    </div>
+</div>

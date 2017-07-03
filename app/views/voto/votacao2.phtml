@@ -1,0 +1,59 @@
+<section class="professor">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-custom">
+                <div class="panel-body" align="center" > 
+                      <figure>
+                        <img src="<?php echo IMG ?>emanuel2.png" alt="Thumb">
+                      </figure>
+                      
+                    <div style="border: 1px solid #aaaaaa; background-color: #f2f2f2; padding-left: 25px; padding-top: 5px; padding-bottom: 5px; padding-right: 25px; border-radius:50px; -moz-border-radius: 50px; -webkit-border-radius: 50px;" align="justify"> 
+                        Emanuel Bezerra Rodrigues, graduado em Engenharia Elétrica pela Universidade Federal do Ceará, também é mestre pela mesma universidade e doutor pela Universitat Politècnica de Catalunya (UPC) e atualmente integra o atual corpo discente do Departamento de Computação da UFC.
+                        
+                        <br>
+                        <br>
+
+                        Aqui te oferecemos a oportunidade de avaliá-lo com base nos seguintes aspectos:
+                            <ol>
+                                <li><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Planejamento pedagógico, didático e domínio do conteúdo;</b></li>
+                                <li><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Relacionamento e postura com os discentes</b></li> 
+                                <li><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Formas e usos da avaliação do aprendizado discente</b></li> 
+                                <li><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Pontualidade e assiduidade às aulas</b></li>
+                            </ol>
+                            
+                            <br>
+                            
+                            Agora queremos saber de <b>você</b>, baseando-se nas características citadas acima, quantas estrelas no geral, você daria para este docente?
+
+                     </div>
+            
+                    <br><br>
+
+                    <form action="<?php echo BASE; ?>voto/car/" class="form-horizontal" method="post">
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star" name="fb" value="0" checked/>
+
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                          
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                          
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                         
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                        <br><br>
+                        <button type="submite" class="btn btn-primary"><i class="fa fa-legal"></i> Votar</button><br>
+                        <a href="<?php echo BASE . 'voto/'; ?>" class="btn btn-primary"><i class="fa fa-reply"></i> Voltar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

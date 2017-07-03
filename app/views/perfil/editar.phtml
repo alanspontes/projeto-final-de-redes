@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-custom">
+            <div class="panel-heading">
+            </div>
+            <div class="panel-body">
+            <?php 
+                echo (isset($this->alert) ? $this->alert : '' ); 
+
+                $values = [
+                    'name' => $view_user->name,
+                    'username' => $view_user->username,
+                    'email' => $view_user->email
+                ];
+
+                Form::open('editarusuario',$values, [
+                    'action' => BASE . 'perfil/editar',
+                    'prevent' => [
+                        'focus'
+                    ]
+                ]);
+
+                Form::Textbox(
+                    'Nome:',
+                    'name',
+                    [
+                        'required' => 1
+                    ]
+                );
+                Form::Textbox(
+                    'Login:',
+                    'username',
+                    [
+                        'required' => 1
+                    ]
+                );
+
+                Form::Textbox(
+                    'E-mail:',
+                    'email',
+                    [
+                        'required' => 1
+                    ]
+                );
+
+                Form::Password(
+                    'Senha (Preencha apenas se desejar alterar:)',
+                    'password'
+                );
+
+                Form::Button('Atualiza perfil', 'submit');
+
+                Form::close(false);
+            ?>
+            <a href="<?php echo BASE . 'home/'; ?>" class="btn btn-primary"><i class="fa fa-reply"></i> Voltar</a>
+            </div>
+        </div>
+    </div>
+</div>
